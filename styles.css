@@ -1,0 +1,33 @@
+#anreabethClone {
+    padding: 20px;
+}
+
+
+
+.submit {
+    text-align: left;
+}
+.navigation {
+    padding: 0 32px 0 32px;
+}
+.intro-text {
+    text-align: center; 
+    text-justify: inter-word;
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+form {
+    width:min-content;
+    margin:0 auto;
+}
+ul {
+    margin: auto 0;
+    display: inline-block;
+    text-align: left;
+}
+section {
+    text-align: center; 
+    padding: 30px;
+}

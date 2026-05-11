@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="utf-8" lang="en-US">
+    <title>CATAYLO'S PERSONAL PORTFOLIO: WELCOME</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+    <header style="text-align: center;">
+
+      <h1 >Cataylo's Personal Portfolio</h1>
+      <a href="indexe.html" class="navigation" style="font-weight: bold;">home</a>
+      <a href="about.html" class="navigation">about</a>
+      <a href="blog.html" class="navigation">blog</a>
+      <a href="contact.html" class="navigation">contacts</a>
+    
+    </header>
+
+
+    <main style="text-align: center; padding: 30px">
+        <div class="intro-text">
+          <p>Welcome! <br>Click the buttons below for my introduction.</p>    
+        </div>
+        <nav class="short-intro-buttons">
+          <button onclick="whoAmI()">My name</button>
+          <button onclick="displaySecret()">Who am I?</button>
+          <button onclick="handleSkillSets()">Skill sets</button>
+        </nav>
+    </main>
+
+
+    <footer style="text-align: center;">
+
+      <h2>So...</h2>
+      <p>Beware of black hats</p>
+
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
