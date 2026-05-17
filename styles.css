@@ -1,6 +1,11 @@
 #anreabethClone {
     padding: 20px;
 }
+#blog-lists {
+    text-align: justify;
+    width: 600px;
+    margin: 0 auto;
+}
 
 
 
@@ -16,9 +21,18 @@
     width: 500px;
     margin: 0 auto;
 }
+.align-button {
+    text-align: right;
+}
+.blog-post {
+    text-align: left;
+}
+.blog-content {
+    height: 100px;
+}
 
 
-form {
+form { 
     width:min-content;
     margin:0 auto;
 }
