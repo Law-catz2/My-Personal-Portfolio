@@ -1,5 +1,3 @@
-const submitButton = document.getElementById('lubot')
-const postButton = document.getElementById('post')
 const home = document.getElementById('home')
 const whoseBlog = [
     {
@@ -14,7 +12,7 @@ const whoseBlog = [
         title: "A secret business community.",
         content: "I spent a weekday studying near my real estate mom's place. There, she wanted to introduce me to a family of rich ancestors (With kids of course). I was so scared. She was introducing me to a horde to hungry zombies. She summoned one of the zombies and encouraged me to mingle. They didn't eat my brains. they acted nice. I shared my favorite activities in college, and they loved it. They reminded them of their business in the B and I quadrant. By the way, they had autistic-friendly ways to help me socialize. At this point, they were unsillimanized too.",
     },
-    
+
 ]
 
 
@@ -29,37 +27,10 @@ for(let i = 0; i < whoseBlog.length; ++i) {
     h2 = document.createElement('p')
     h2.innerText = whoseBlog[i].content
     b.appendChild(h2)
-
 }
 
 
-submitButton.addEventListener('click', function() {
-    let getName = document.getElementById('name').value
-    let getEmail = document.getElementById('email').value
-    let getMessage = document.getElementById('message').value
-    alert(`Your name: ${getName}\nYour email address: ${getEmail}\nMy message is: ${getMessage}`)
-})
-
-var checkBlog = (indexArr) => {
-    if (whoseBlog[indexArr].hasOwnProperty("content") && whoseBlog[indexArr].hasOwnProperty("title")) {
-        return "Blog post identified!" 
-    }
-}
-
-var addBlog= (titleName, contentDescription) => {
-    if (titleName === '' || titleName === undefined || titleName === null || Number.isNaN(titleName)) 
-        return `invalid title`
-    if (contentDescription === '' || contentDescription === undefined || contentDescription === null || Number.isNaN(contentDescription)) 
-        return `invalid content`
-
-    whoseBlog.push({
-        title: titleName, 
-        content: contentDescription
-    })
-    
-    return whoseBlog;
-}
-
+/* This is for the home page*/
 function whoAmI() {
     let p = document.querySelector('p')
     p.textContent ="Lawrence G. Cataylo"
@@ -70,6 +41,8 @@ function displaySecret() {
      p = document.querySelector('p')
     p.innerHTML ="<h2>Hey everyone! I'm Lawrence.</h2>I'm currently studying Computer Science at Foundation University. I program as a hobby. Yet, I explore a wide range of skills as a hobbyist. I gain enough knowledge to challenge the rules of society. I'm ready to learn and work along with you.<br><br>Thanks!"
 }
+
+
 function handleSkillSets() {
      p = document.querySelector('p')
     p.innerHTML = "<ul><li>Penetration testing</li><li>Software Engineering</li><li>Secure Coding</li><li>Mathematics & logistics</li><li>Game developer</li></ul>"

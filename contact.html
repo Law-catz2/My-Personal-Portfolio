@@ -57,6 +57,15 @@
 
         </footer>
 
-        <script src="script.js"></script>
+        <script>
+            const submitButton = document.getElementById('lubot')
+
+            submitButton.addEventListener('click', function() {
+                let getName = document.getElementById('name').value
+                let getEmail = document.getElementById('email').value
+                let getMessage = document.getElementById('message').value
+                alert(`Your name: ${getName}\nYour email address: ${getEmail}\nMy message is: ${getMessage}`)
+            })
+        </script>
     </body>
 </html>
