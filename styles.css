@@ -72,9 +72,6 @@ header h1 {
     font-size: 1.25rem;
 }
 
-nav {
-    
-}
 nav ul {
     list-style: none;
     display: flex;
@@ -86,7 +83,6 @@ nav ul {
 
 nav a 
 {
-    
     padding: 500px;
     height:max-content;
     text-decoration: none;
@@ -132,18 +128,25 @@ nav a:active
 .intro-content {
     background-color: rgb(255, 255, 225);
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     gap: 2rem;
     text-align: justify;
     text-justify: inter-word;
     padding: 100px 0;
     align-items: center;
 }
-.short-intro {
-    width: 400px;
-    display: flex;
-    flex-direction: row;
-}
 .profile-pic {
     border-radius: 999px;
+    box-shadow: 10px 10px 0 gold;
+}
+.whoami {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 200%;
+    gap: 4rem;
+    margin: 0 auto;
+}
+.whoami-text {
+    margin: auto 0;
 }
