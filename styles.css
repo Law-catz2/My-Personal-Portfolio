@@ -1,3 +1,5 @@
+/* WARNING: THIS IS THE HARDEST PART OF WEB DEVELOPMENT*/
+
 /* Initials */
 
 #anreabethClone {
@@ -47,6 +49,9 @@ section {
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+body {
+    background: #faf8d7;
+}
 
 .container {
     box-sizing: border-box;
@@ -56,6 +61,10 @@ section {
     margin: auto;
     height: 3rem;
 }
+
+
+
+
 header .container {
     display: flex;
     justify-content: space-between;
@@ -120,7 +129,7 @@ nav a:active
     padding: 0;
 }
 .intro-text {
-    background-color: #fffa9a;
+    background: #fffa9a;
     text-align: center; 
     padding: 10px;
     margin: 0 auto;
@@ -149,4 +158,32 @@ nav a:active
 }
 .whoami-text {
     margin: auto 0;
+}
+
+.intro-skill-set {
+    padding-bottom: 2.5rem;
+    background: #fff28f;
+    padding: 0 auto;
+}
+
+.intro-skill-set ul{
+    list-style: none;
+    gap: 3rem;
+    display: flex;
+    margin: 0 auto;
+    height:max-content;
+    
+}
+footer {
+    background:#fffa9a;
+    color: #1e0052;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    margin-top: 2rem;
+    height: 5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
 }
