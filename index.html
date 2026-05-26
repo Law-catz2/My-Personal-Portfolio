@@ -6,28 +6,38 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-
-    <header style="text-align: center;">
-
-      <h1 >Cataylo's Personal Portfolio</h1>
-      <a href="indexe.html" class="navigation" style="font-weight: bold;">home</a>
-      <a href="about.html" class="navigation">about</a>
-      <a href="blog.html" class="navigation">blog</a>
-      <a href="contact.html" class="navigation">contacts</a>
-    
+    <header>
+      <div class="container">
+        <h1>CPortfolio</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="navigation">home</a></li>
+            <li><a href="about.html" class="navigation">about</a></li>
+            <li><a href="blog.html" class="navigation">blog</a></li>
+            <li><a href="contact.html" class="navigation" id="contact-button">contacts</a></li>
+          </ul>  
+        </nav>
+      </div>  
     </header>
 
 
-    <main style="text-align: center; padding: 30px">
-        <div class="intro-text">
+    <main class="homepage">
+        <section class="intro-text">
           <h1>Welcome!</h1>
-          <p>Click the buttons below for my introduction.</p>    
+        </section>
+
+
+        <div class="intro-content">
+          <div class="short-intro">
+            <p>Click the buttons below for my introduction.</p>    
+          </div>
+          
+          <nav class="short-intro-buttons">
+            <button onclick="whoAmI()">My name</button>
+            <button onclick="displaySecret()">Who am I?</button>
+            <button onclick="handleSkillSets()">Skill sets</button>
+          </nav>
         </div>
-        <nav class="short-intro-buttons">
-          <button onclick="whoAmI()">My name</button>
-          <button onclick="displaySecret()">Who am I?</button>
-          <button onclick="handleSkillSets()">Skill sets</button>
-        </nav>
     </main>
 
 
