@@ -10,9 +10,7 @@
     width: 600px;
     margin: 0 auto;
 }
-.submit {
-    text-align: left;
-}
+
 .navigation {
     padding: 0 32px 0 32px;
 }
@@ -28,31 +26,26 @@
 }
 
 
-form { 
-    width:min-content;
-    margin:0 auto;
-}
 ul {
     margin: auto 0;
     display: inline-block;
     text-align: left;
 }
-section {
-    text-align: center; 
-    padding: 30px;
-}
+
 
 /* Main */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-body {
-    background: #faf8d7;
 }
 
+body {
+    background: #faf8d7;
+    font-family: 'JetBrains Mono'
+}
+
+/*HOME (index.html)*/
 .container {
     box-sizing: border-box;
     width: 90%;
@@ -61,8 +54,6 @@ body {
     margin: auto;
     height: 3rem;
 }
-
-
 
 
 header .container {
@@ -185,5 +176,120 @@ footer {
     width: 100%;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    /* position: absolute; */
+}
+
+/* CONTACTS */
+
+.contact-ui {
+    background-color:white;
+    width: 300px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius:  20px;
+    box-shadow: 10px 10px 0 rgb(149, 146, 90);
+}
+.contact-ui h1{
+    text-align: center;
+}
+.contact {
+    display: block;
+    padding: 3rem;
+}
+.submit {
+    text-align: center;
+    display: block;
+    padding: 1em 0;
+}
+
+#lubot {
+    margin: 1rem 0 0 0;
+    appearance: none;
+    border: 1px solid rgb(192, 192, 192);
+    width: 90%;
+    background-color: white;
+    padding: 5px;
+    font-family: 'JetBrains Mono';
+    font-size: 16px;
+}
+
+#lubot:hover {
+    background-color: #fff8bf8a;
+    cursor: pointer;
+}
+
+#lubot:active {
+    background-color: #fff082;
+    cursor: pointer;
+}
+
+#message {
+    margin: 0.5rem 0 0 0;   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+label {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+input {
+    padding: 0.3em;
+}
+
+/* for contact-links */
+.contact-links {
+    width: 300px;
+    margin: 3rem auto;
+    
+}
+
+.contact-profiles {
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5em 0;
+}
+
+.contact-image {
+    border-radius: 5em;
+}
+
+.whoareyou:link {
+    color:#1b0055;
+    text-decoration: none;
+}
+
+#true-email {
+    margin: 1em;
+    border-radius: 1rem;
+}
+
+fieldset {
+    background-color: #bea0ff;
+    text-align: center;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 0 #3000985d;
+}
+legend {
+    margin: 0 auto;
+    color:#1e0052;
+    background-color:#faf8d7;
+    padding: 5px;
+    font-weight: 600;
+    border-radius:  5rem;
+    border: 2px solid #1e0052;
+}
+span {
+    background-color:#faf8d7;
+    padding: 7.5px;
+    border-radius: 5rem;
+    /* border: 2px solid #1e005298; */
+    font-size: 16px;
 }

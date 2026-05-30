@@ -24,32 +24,54 @@
 
 
 
-        <section id="contact">
-            <h1>CONTACT</h1>
-            <form>
-                <label for="name">
-                    Name
-                </label>
-                <input type="text" name="Name" id="name"> <br>
+        <section class="contact">
+            <div class="contact-ui">
+                <h1>Contact me</h1>
+                <form>
+                    <label for="name">
+                        Name:
+                    </label>
+                    <input type="text" name="Name" id="name" required> 
 
-                <label for="email">
-                    Email
-                </label>
-                <input type="email" name="Email" id="email"> <br>
+                    
+                    <label for="email">
+                        Email:
+                    </label>
+                    <input type="email" name="Email" id="email" required> 
 
-                <div class="submit">
-                    <label for="message">
-                        Message
-                    </label> <br>
-                </div> 
 
-                <textarea id="message" name="Message" value="" rows="5" cols="28"></textarea> <br>
+                    <div class="submit">
+                        <label for="message">
+                            Message
+                        </label> 
+        
+                        <textarea id="message" name="Message" value="" rows="6" cols="29" placeholder="I use Linux From Scratch btw..."></textarea> 
                 
-                <div class="submit">
-                    <input type="submit" value="Submit" id="lubot">
-                </div>
-                
-            </form>        
+                        <input type="submit" value="Submit" id="lubot">
+                    </div> 
+                </form>   
+            </div>       
+            
+            <div class="contact-links"> 
+                <fieldset>
+                    <legend>Additional Links</legend>
+
+                    <img src="images/proton-mail-logo.png" width="100" id="true-email">
+                    <a class="whoareyou" href="https://proton.me/blog/how-to-de-google"><span>Lawx25@protonmail.com</span></a>
+
+                    <ul class="contact-profiles">
+                        <li>
+                            <a href="https://www.facebook.com/Lawrence.catz"><img src="images/facebook.png" width="50" class="contact-image"></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Law-catz2"><img src="images/Github.png" width="50" class="contact-image"></a>
+                        </li>
+                        <li>
+                            <a href="https://discord.com/channels/@lawrence_catz"><img src="images/discord.png" width="50" class="contact-image"></a>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
         </section>
 
 
