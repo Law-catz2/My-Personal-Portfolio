@@ -5,26 +5,6 @@
 #anreabethClone {
     padding: 20px;
 }
-#blog-lists {
-    text-align: justify;
-    width: 600px;
-    margin: 0 auto;
-}
-
-.navigation {
-    padding: 0 32px 0 32px;
-}
-
-.align-button {
-    text-align: right;
-}
-.blog-post {
-    text-align: left;
-}
-.blog-content {
-    height: 100px;
-}
-
 
 ul {
     margin: auto 0;
@@ -55,6 +35,9 @@ body {
     height: 3rem;
 }
 
+.navigation {
+    padding: 0 32px 0 32px;
+}
 
 header .container {
     display: flex;
@@ -290,6 +273,62 @@ span {
     background-color:#faf8d7;
     padding: 7.5px;
     border-radius: 5rem;
-    /* border: 2px solid #1e005298; */
     font-size: 16px;
 }
+
+/* BLOGS */
+
+
+
+
+#read-blog  {
+    appearance: none;
+    background: #fffef5;
+    border: none;
+    cursor: pointer;
+    color:#9e8d51;
+    margin-top: 0.5em;
+    font-size: 1em;
+    font-family: 'JetBrains Mono';
+}
+
+#read-blog:hover{
+    color:rgb(206, 186, 95)
+}
+
+
+#blog-lists {
+    text-align: justify;
+    width: 600px;
+    margin: 3rem auto;
+}
+
+.reader {
+    text-align: center;
+}
+.blog-post {
+    text-align: left;
+}
+.blog-content {
+    height: 100px;
+}
+.blog-page {
+    background-color: #fffef5;
+    margin: 3rem 0;
+    padding: 2rem;
+    box-shadow: 10px 10px 0 #726842;
+}
+.blog-page p {
+    padding: 1rem 0 0 0;
+}
+.category {
+    font-weight: 500;
+    text-decoration: underline;
+    margin: auto 0;
+}
+article {
+    display: flex;
+    justify-content: space-between;
+}
+
+
