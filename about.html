@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8" lang="en-US">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CPORTFOLIO: ABOUT ME</title>
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -25,15 +26,90 @@
 
 
         <section id="about">
-            <h1> ABOUT ME </h1>
-
-            <h2>Some little background</h2>
-            <p>I show a fixiation of computers as a kid. I play tons of video games here. Then, I explore the same way with smart phones and gaming consoles. My father thought I was autistic or the math kid. Though, hacking and malware analysis drive me into pursuing computers. Therefore, I learn much of computer science and engineering myself.</p>    
+            <section class="intro-text">
+                <h1> About me </h1>
+            </section>
             
-            <h2>My story</h2>
-            <p>I grew up in Saudi Arabia. We enjoy a lot of time in our apartment. Although Filipinos were limited here, we constantly adjust to the Arab life. Except my social skills, because I acted aloof to my Filipino peers. I always lived of not knowing facial expressions and the art of small talk. Normal schools are my enemies. They fail me in all these competitions. Rapid moves and baffling instructions. Giving me a hard time. I have failed under the burden of people. Filipinos called me stupid or annoying, but my passions weren't wasted.</p>
-            <br>
-            <p>After residing in Dumaguete, I found passions away from school. I share it with my ancestors, except a cousin of a rich dad who graduated in Silliman University. They never believed in independence. Because of my percieved weaknesses, Dumaguete challenged me to innovate that succeeded the masses. It was a seemingly impossible task. Hence, I came for help.</p>
+            <div class="background-profile">
+                <div class="personal-background">
+                    <h2>Some little background</h2>
+
+                    <p>
+                        I show a fixiation of computers as a kid. 
+                        I play tons of video games here. Then, I 
+                        explore the same way with smart phones and
+                        gaming consoles. My father thought I was
+                        autistic or the math kid. Though, gaming 
+                        drives me into pursuing computers. Therefore, 
+                        I learn much of computer science and engineering 
+                        myself.
+                    </p>    
+                </div>
+                <img class="ComputerLab" src="images/AboutPage/ComputerLab.jpg" />   
+            </div>
+
+            <div class="background-profile" style="margin-top: 4rem;">
+                <img 
+                    class="ComputerLab" 
+                    id="Linux" 
+                    src="images/AboutPage/SaudiArabia.jpg"  
+                    onclick="changeImage()"
+                /> 
+                <div class="personal-background">
+                    <h2>My story</h2>
+                    <p style="text-align: justify;">
+                        I grew up in Saudi Arabia. We enjoy a 
+                        lot of time in our apartment. Although 
+                        Filipinos were limited there, we constantly 
+                        adjust to the Arab life. Except my social 
+                        skills, because I acted aloof to my Filipino 
+                        peers. Sometimes, school was hard.
+                        I didn't know the timing to keep friends. 
+                        Most of the time, I really sucked at activities
+                        that required me to mingle like decathlons
+                        and sports.
+        
+                    </p>
+                    
+                    <p class="narrative">
+                        Meanwhile, the lack of filipino 
+                        contact lead me into immersing technology.
+                        Playing video games and solving math
+                        problems became my forte. Innovating
+                        was way more than just working my butt
+                        of to succeed in school.
+                    </p>
+                    
+                    <p class="narrative">
+                        Arriving in Dumaguete came with more challenges.
+                        At first, it was Silliman. Because of my social 
+                        challenges, my classmate ignored me or talked behind
+                        my back. Although, I was doing decent here, I 
+                        couldn't bare the load. So I kept transferring
+                        school to school. Next came with college. I was
+                        baffled by the obsolete instructions of my professors.
+                        Despite my efforts, they reward me less: low grades
+                        and no year-end awards.
+                    </p>
+                    
+                    <p class="narrative">
+                        My cousins never believed me. School performance 
+                        matters for them. After enduring the harsh treatments
+                        of the four University horsemen, I made a deal.
+                        If I innovate something beyond school and they love it,
+                        I would've won.
+                    </p>
+                    
+                    <p class="narrative">
+                        Now, it's up to you to respond for help. The more we
+                        worked together, the more we can teach the Universities
+                        a lesson. In the meantime, I'll just study and chill.
+                    </p>
+                    <div class='reader'>
+                        <button onclick='showContent()' class="readme" id="read-blog">Read Article ⮟</button>
+                    </div>
+                </div>
+            </div> 
         </section>
 
 
@@ -44,6 +120,6 @@
           </div>
         </footer>
 
-        <script></script>
+        <script src="scripts/about.js"></script>
     </body>
 </html>

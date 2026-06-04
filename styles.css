@@ -277,10 +277,6 @@ span {
 }
 
 /* BLOGS */
-
-
-
-
 #read-blog  {
     appearance: none;
     background: #fffef5;
@@ -331,4 +327,42 @@ article {
     justify-content: space-between;
 }
 
+/* ABOUT PAGE */
 
+@media (max-width: 800px) {
+    .background-profile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60%;
+        max-width: max-content;
+        margin: 40px auto;
+    }
+    .ComputerLab {
+        object-fit: fill;
+        width: 1200px;
+    }
+}
+
+.background-profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: unwrap;
+    width: 100%;
+    max-width: max-content;
+    margin: 40px auto;
+    box-shadow: 0 0.75rem #9d8f5c;
+}
+.personal-background {
+    background-color: #fffef2;
+    padding: 2.25rem;
+}
+.ComputerLab {
+    object-fit: cover;
+}
+
+.narrative {
+    margin: 15px 0;
+    text-align: justify;
+    display: none;
+}
