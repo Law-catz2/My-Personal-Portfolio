@@ -1,4 +1,4 @@
-// JAVASCRIPT SOURCE CPODE FOR ABOUT PAGE
+// JAVASCRIPT SOURCE CODE FOR ABOUT PAGE
 
 let count = 0
 const img = [
@@ -13,14 +13,14 @@ let changeImage = () => {
     count++
     count < img.length ? document.getElementById('Linux').src = img[count] : count = -1
 }
-function showContent() {
-    let article  = document.querySelectorAll('.narrative')
-    let buttonID = document.querySelector('.readme')
+function showContent(classTarget, buttonName) {
+    let article  = document.querySelectorAll(classTarget)
+    let buttonID = document.querySelector(buttonName)
     if (article[0].style.display === "flex") {
         article.forEach(k=>k.style.display ="none")
-        buttonID.innerHTML = "Read Article ⮟"
+        buttonID.innerHTML = "⮟"
     } else {
         article.forEach(k=>k.style.display ="flex")
-        buttonID.innerHTML = "Close Article ⮝"   
+        buttonID.innerHTML = "⮝"   
     }
 }

@@ -34,6 +34,8 @@
                 <div class="personal-background">
                     <h2>Some little background</h2>
 
+                    <div class="divider"></div>
+                    
                     <p>
                         I show a fixiation of computers as a kid. 
                         I play tons of video games here. Then, I 
@@ -57,6 +59,9 @@
                 /> 
                 <div class="personal-background">
                     <h2>My story</h2>
+
+                    <div class="divider"></div>
+
                     <p style="text-align: justify;">
                         I grew up in Saudi Arabia. We enjoy a 
                         lot of time in our apartment. Although 
@@ -106,12 +111,35 @@
                         a lesson. In the meantime, I'll just study and chill.
                     </p>
                     <div class='reader'>
-                        <button onclick='showContent()' class="readme" id="read-blog">Read Article ⮟</button>
+                        <button onclick='showContent(".narrative", ".readme")' class="readme" id="read-blog">⮟</button>
                     </div>
                 </div>
             </div> 
         </section>
-
+        <div class='reader'>
+            <button onclick='showContent(".touchMeNot", ".secret")' class="secret" id="read-secret">⮟</button>
+        </div>
+        <section class="touchMeNot">
+            <div class="touchMeNot-ui">
+                <img 
+                    src="images/AboutPage/TouchMeNot.jpg" 
+                    alt="I am autistic"
+                    width="200"
+                    style="border-radius: 99em;" 
+                />
+                
+                <h2>I am autistic</h2>
+                <p>
+                    <i>“Autism is not a disability; it’s a different ability.”<br> <span>—Alex Plank</span></i>
+                </p>
+                <p>
+                    <i>“Being a parent of a child with autism is the ultimate test of flexibility.”<br> <span>—Dena Gassner</span></i>
+                </p>
+                <p>
+                    <i>“If the autism gene were eliminated, people would just chat in caves and do nothing.”<br> <span>—Temple Grandin</span></i>
+                </p>
+            </div>
+        </section>
 
         <footer>
           <div class="container">
