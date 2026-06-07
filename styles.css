@@ -277,7 +277,13 @@ footer {
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /*RESPONSIVE DESIGN FOR MOBILE*/
+    .skill-set  {
+        width: 60%;
+    }
+    .skill-set img {
+        width: 100%;
+    }
     .soft-skills img{
         width: 450px;
     }
