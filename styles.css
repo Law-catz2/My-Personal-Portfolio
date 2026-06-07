@@ -248,8 +248,19 @@ div[id='HelloWorld']:first-of-type {
 }
 
 
-.set1 .pic {
-    display: block;
+.set1 .pic{
+    display: inline;
+    position: relative;
+    top: 50px;
+}
+.set1 img:last-of-type {
+    max-width: 90px;
+    width: 100%;
+}
+.set1 img:first-of-type{
+    max-width: 190px;
+    width: 100%;
+    transform:translateX(5px);
 }
 .set2 img{
     border-radius: 20px;
@@ -286,6 +297,9 @@ footer {
     }
     .soft-skills img{
         width: 450px;
+    }
+    .set1 .pic{
+        top: 0;
     }
     .whoami {
         display: block;
