@@ -23,44 +23,125 @@
 
 
     <main class="homepage">
-        <section class="intro-text">
-          <h1>Welcome!</h1>
-        </section>
-
-
         <section class="intro-content">
             <div class="whoami">
               <div>
-                <img class='profile-pic' src = 'images/homeOnly/lgc.jpg' width = 300>
+                <img class='profile-pic' src = 'images/homeOnly/lgc.jpg' width = "300">
               </div>
               
               <div class="whoami-text">
-                <h2>Hey everyone! I'm Lawrence G. Cataylo.</h2>
+                <div id="HelloWorld">
+                  Welcome!
+                </div>
+                <h2>Hey everyone! I'm <span id = "fullname">Lawrence G. Cataylo</span>.</h2>
                 <br>
-                <p>I'm currently studying Computer Science at Foundation University. I program and read computer engineering books as a hobby. Yet, I explore a wide range of skills as a hobbyist. I gain enough knowledge to innovate and challenge conventional trends. I'm ready to learn and work along with you.<br><br>Thanks!</p>
+                <p>I'm currently studying Computer Science at Foundation University. I program and read computer engineering books as a hobby. Yet, I explore a wide range of skills as a hobbyist. I gain enough knowledge to innovate and challenge conventional trends. I'm ready to learn and work along with you.</p>
+                <button id="whois">Learn more</button>
               </div>
             </div>  
         </section>
 
+        
+
         <section class="intro-skill-set">
-          <ul>
-            <li>Penetration testing</li>
-            <li>Software Engineering</li>
-            <li>Secure Coding</li>
-            <li>Mathematics & logistics</li>
-            <li>Game developer</li>
-          </ul>  
+          <div class="intro-skill-category">
+            <h2>Skill Summary</h2>
+            <div class="skill-category">Technical Skills</div>
+          </div>
+
+          <div class="skills-set">
+            <div class="skill-set set1">
+              <h3>Programming Languages</h3>
+              <img src="images/homeOnly/Cpp_python.png" width="200" />
+              <img src="images/homeOnly/perl.png" width="90" />
+            </div>
+
+            <div class="skill-set set2">
+              <h3>Linux</h3>
+              <img src="images/homeOnly/linux.png" width="500" />
+            </div>
+
+            <div class="skill-set set3">
+              <h3>Web App Development</h3>
+              <br>
+              <img src="images/homeOnly/web_dev.png" width="250" />
+            </div>
+
+            <div class="skill-set set4">
+              <h3>Advanced Mathematics</h3>
+              <img src="images/homeOnly/Computational_math.png" width="250" />
+            </div>
+
+            <div class="skill-set set5">
+              <h3>Game developer</h3>
+              <img src="images/homeOnly/Unity.png" width="250" />
+            </div>
+          </div>
+
+
+
+          <div class="intro-skill-category">
+            <div class="skill-category">Soft Skills</div>
+          </div>
+
+          <div class="soft-skills">
+              <img 
+                src="images/homeOnly/IMG_20260607_173344_721_1_1.jpg" 
+                alt="Soft skills: Problem solving, Time management, and Flexibility" 
+                width="600" 
+              />
+          </div>
+
+          <button id="systemctl">Learn more</button>
         </section>
     </main>
 
-
     <footer>
       <div class="container">
-        <h2>So...</h2>
+        <div id="catchphrase">Think differently!</div>
         <p>Beware of black hats</p>
       </div>
     </footer>
 
-    <script></script>
+
+    <!-- ADDITIONAL DESCRIPTION -->
+
+    <dialog id="more-about-me">
+      <h2>More Information</h2>
+      <div class="divider"></div>
+      <p><strong>Birthdate:</strong> September 28, 2005</p>
+      <p><strong>Where I was born?:</strong> Saudi Arabia</p>
+      <p><strong>College Department:</strong> College of Computer Studies</p>
+      <p><strong>Linux Distro/s:</strong> Fedora & CachyOS</p>
+      <p><strong>Hobbies:</strong> Sketching, programming, and Writing</p>
+      <button>Close</button>
+    </dialog>
+
+    <dialog id="skills-info">
+      <h2>Why These Skills?</h2>
+      <div class="divider"></div>
+
+      <div class="space">
+        <p>
+          <span>M</span>y dad and my sister inflence these hobbies. 
+          My dad is an electrical engineer.
+          He works in Saudi Arabia.
+          He graduates his degree from a local University in Catanduanes.
+          He was a playful charismatic dad I can realize.
+        </p>
+
+        <p>
+          My Ate is a nurse who graduated in Foundation University.
+          She loves to draw and sing. I usually love to annoy her 
+          when I'm bored. When we needed alone time outside, we go to
+          coffee shops. My sister is my world − a source of emotional 
+          regulation. 
+        </p>
+      </div>  
+      <button>Close</button>
+    </dialog>
+    
+
+    <script src="scripts/home.js"></script>
   </body>
 </html>

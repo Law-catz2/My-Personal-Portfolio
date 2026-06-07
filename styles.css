@@ -2,15 +2,6 @@
 
 /* Initials */
 
-#anreabethClone {
-    padding: 20px;
-}
-
-ul {
-    margin: auto 0;
-    display: inline-block;
-    text-align: left;
-}
 
 
 /* Main */
@@ -46,7 +37,7 @@ header .container {
 }
 header {
     background: #faf8d7;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 3px solid#1b0055;
     padding: 0;
 }
 
@@ -98,6 +89,55 @@ nav a:active
     padding: 0 auto;
 }
 
+#more-about-me, #skills-info { /* DIALOG INFO */
+    position: fixed;
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    background: #faf8d7;
+    border: 4px solid #402d69;
+    box-shadow: 10px 10px 0 #402d6974;
+}
+dialog button {
+    appearance: none;
+    background: none;
+    border: none;
+    margin-top: 20px;
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    font-size: large;
+    color: #726842;
+}
+dialog p {
+    width: 600px;
+    text-align: justify;
+    padding: 10px 0;
+}
+dialog p > span{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+dialog button:hover{
+    color: #bbad7d;
+    cursor: pointer;
+}
+div[id='catchphrase'] {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0 0 5px 0;
+}
+div[id='HelloWorld']:first-of-type {
+    font-size: 30pt;
+    position: relative;
+    top: -10px;
+    background: -webkit-linear-gradient(45deg, gold 10%, goldenrod);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+} 
+
+
 .homepage {
     text-align: center;
     padding: 0;
@@ -120,7 +160,7 @@ nav a:active
 }
 .profile-pic {
     border-radius: 999px;
-    box-shadow: 10px 10px 0 gold;
+    box-shadow: 10px 10px 20px gold;
 }
 .whoami {
     display: flex;
@@ -133,33 +173,128 @@ nav a:active
 .whoami-text {
     margin: auto 0;
 }
-
-.intro-skill-set {
-    padding-bottom: 2.5rem;
-    background: #fff28f;
-    padding: 0 auto;
+.whoami-text > h2 > #fullname {
+    font-size: 25px;
+    background: -webkit-linear-gradient(45deg, gold 5%, goldenrod);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
-.intro-skill-set ul{
-    list-style: none;
-    gap: 3rem;
-    display: flex;
-    margin: 0 auto;
-    height:max-content;
+.whoami-text button, .intro-skill-set button {
+    appearance: none;
+    position: relative;
+    top: 20px;
+    padding: 5px;
+    border: 3px solid #1e0052;
+    box-shadow: 3px 3px 0 #1b0055b3;
+    background-color: rgb(255, 248, 189);
+    font-family: 'JetBrains Mono';
     
 }
+.intro-skill-set button {
+    top: -10px;
+}
+.whoami-text button:hover, .intro-skill-set button:hover  {
+    background-color: rgb(255, 246, 164);
+    cursor: pointer;
+}
+.whoami-text button:active, .intro-skill-set button:active  {
+    transform: translateX(3px) translateY(3px);
+    box-shadow: none;
+}
+.intro-skill-set {
+    background-color:#fff082;
+    padding: 10px 0;
+}
+.intro-skill-category h2:first-of-type {
+    font-size: 30px;
+    color:rgba(0, 0, 0, 0.589)
+}
+.skill-category {
+    border: 2pt solid #1b0055;
+    width: max-content;
+    background-color: #faf8d7;
+    padding: 10px 40px;
+    margin: 1rem auto;
+    box-shadow: 5px 5px 0 #1b0055bc;
+    font-weight: 500;
+}
+
+.skills-set {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:20px;
+    
+}
+.skill-set {
+    padding: 10px;
+    background-color: #fffef5;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+.soft-skills {
+    margin: 40px auto;
+    border-radius: 20px; 
+}
+.soft-skills img {
+    border-radius: 20px;
+    border: 20px solid #fffef2;
+}
+.soft-skills img:hover, .skill-set:hover {
+    transform: scale(1.03, 1.03);
+}
+
+
+.set1 .pic {
+    display: block;
+}
+.set2 img{
+    border-radius: 20px;
+}
+.set2 {
+    order: 1;
+}
+.set4 img{
+    border-radius: 20px;
+}
+
+.set5 img {
+    padding: 10%;
+}
+
 footer {
     background:#fffa9a;
     color: #1e0052;
     text-align: center;
     padding: 1rem;
-    bottom: 0;
     margin-top: 2rem;
     height: 5rem;
     width: 100%;
     align-items: center;
     justify-content: center;
-    /* position: absolute; */
+}
+
+@media screen and (max-width: 768px) {
+    .soft-skills img{
+        width: 450px;
+    }
+    .whoami {
+        display: block;
+        max-width: 1200px;
+        width: 70%; 
+        margin: 0 auto;
+    }
+    .whoami img {
+        margin: 10px auto 50px;
+    }
+    dialog p {
+        width: 400px;
+        text-align: justify;
+        padding: 10px 0;
+    }
 }
 
 /* CONTACTS */
@@ -412,3 +547,5 @@ article {
     background: none;
     font-weight: 1000;
 }
+
+/* HOMEPAGE (FINAL) */
